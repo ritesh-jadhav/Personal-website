@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritesh Jadhav</title>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body{
+               background-color: black;
+        }
+        .tabs{
+            background-color: black;
+        }
+        .slider .indicators .indicator-item.active {
+            background-color: black ;
+        }
+        .slider .indicators .indicator-item{
+            background-color: gray;
+        }
+        .tabs .indicator{
+            background-color: green;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active
+        {
+            background: transparent;
+        }
+        .progress{
+           background-color:  #ffe57f;
+        }
+        .progress .determinate{
+            background-color: #ff4081 ;
+        }
+        .parallax-container{
+            min-height: 280px;
+            height: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    
+   <!-- navbar -->
+        <nav class="nav-wraper black">
+            <div class="container">
+                <a href="#" class="brand-logo ">Ritesh's Profile</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#bio">About Me</a></li>
+                    <li><a href="#edu">Education</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#project">My work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="btn-floating black z-depth-0">
+                       <i class="material-icons">notifications</i>
+                    </a>
+                    </li>
+            
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile">
+            <li><a href="#bio">About Me</a></li>
+                    <li><a href="#edu">Education</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#project">My work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+          </ul>
+ 
+    <!-- slider -->
+    <section class="myslider">
+        <div class="slider">
+            <ul class="slides">
+                <li><img src="img/slide-1.jpg" alt="slide_1">
+                   
+                </li>
+                <li><img src="img/slide-2.jpg" alt="slide_1">
+                    <div class="caption center-align white-text">
+                        <h3>If we type adeptly with 10 fingers</h3>
+                        <h5 class="light text-lighten-3">we're typing faster than our mind is working.</h5>
+                    </div> 
+                 </li>
+                 <li><img src="img/slide-3.png" alt="slide_1">
+                    <div class="caption center-align white-text">
+                        <h3>Code</h3>
+                        <h5 class="light text-lighten-3">is love</h5>
+                    </div> 
+                    </div> 
+                 </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- about me -->
+   
+ 
+    <section class="container section scrollspy" id="bio">
+        <h3 class="header lime-text lighten-4">Hey...It's me,Ritesh..!</h3>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/me.png" class="responsive-img materialboxed circle"  alt="pic">
+            </div>
+            <div class="col s12 l6 pull-l5 ">
+                    <p class="white-text">I am an engineer specialized in computer science domain with an overall CGPA of 6.7 
+                    along with my degree I have completed java,mySQL and UI technologies on my own and mastered 
+                    them.</p>
+                    <p class="white-text">I am activeley looking for an platform to learn and grow where I can bring a lot 
+                    of valueto the team and would be a great team player.</p>
+                    <p class="white-text">I would love to be part of growing organziation and use my programming skiiks to help the compony 
+                    innovate and bring fresh ideas to the table.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education-->
+    <section class="section container scrollspy" id="edu">
+        <h3 class="header lime-text lighten-4"> <p>Educational Details</p></h3>
+        <div class="my-education">
+            <table class="highlight centered responsive-table white-text">
+                <thead>
+                    <tr class="blue-grey darken-3">
+                        <th>Degree</th>
+                        <th>University</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                    <tbody>
+    
+                        <tr>
+                            <td>Bachelor of Engineering</td>
+                            <td>Dr.BAMU, Mahrastra</td>
+                            <td>6.7 / 10</td>
+                        </tr>
+                
+                        <tr>
+                            <td>Diploma in Computer Engineering</td>
+                            <td>MSBTE, Mumbai, Mahrastra</td>
+                            <td>64.69 %</td>
+                        </tr>
+                        <tr>
+                            <td>S.S.C.</td>
+                            <td>State Board, Mahrastra</td>
+                            <td>69.64 %</td>
+                        </tr>
+                    </tbody>    
+            </table>
+        </div>
+        </section>
+
+    <!-- Skills -->
+    <section class="section container scrollspy" id="skill">
+        <h3 class="header lime-text lighten-4t">Skills</h3><br>
+        <div class="row ">
+            <div class="col s12 l12">
+                <label for="skill-1"><h5 class="white-text">HTML</h5></label>     
+                        <div class="progress" id="skill-1">
+                            <div class="determinate" style="width: 70%"></div>
+                        </div>
+        
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l12">
+                <label for="skill-2"><h5 class="white-text">CSS</h5></label>     
+                        <div class="progress" id="skill-2">
+                            <div class="determinate" style="width: 55%"></div>
+                        </div>
+        
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l12">
+                <label for="skill-3"><h5 class="white-text">J2SE / J2EE</h5></label>     
+                        <div class="progress" id="skill-3">
+                            <div class="determinate" style="width: 70%"></div>
+                        </div>
+        
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l12">
+                <label for="skill-1"><h5 class="white-text">MySQL</h5></label>     
+                        <div class="progress" id="skill-1">
+                            <div class="determinate" style="width: 55%"></div>
+                        </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l12">
+                <label for="skill-1"><h5 class="white-text">WebDev & Deployement</h5></label>     
+                        <div class="progress" id="skill-1">
+                            <div class="determinate" style="width: 60%"></div>
+                        </div>
+            </div>
+        </div>
+        </section>
+
+    <!-- parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/s2.jpg" class="responsive-img" alt="para">
+
+        </div>
+    </div>
+
+    <section class="container section" id="interest">
+        
+        <div class="row">
+            
+            <div class="col s12 l4">
+                <h4 class="header grey-text darken-4">Current Profile</h4>
+                    
+                 <ul class="white-text">
+                        <li>able to create responsive UI .</li>
+                        <li>able to re-wrote existing functionalities.</li>
+                        <li>able to reduce and re-use code with OOP's.</li>
+                        <li>able to handling collection data.</li>
+                        <li>Good team player.</li>
+                    </ul>
+                    
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <h5 class="header red-text lighten-1">Area of Intrest</h5>
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#frontend" class="blue-text lighten-4">UI Technologies</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#backend" class="blue-text lighten-4">Back-End Developement</a>
+                    </li>
+                </ul>
+                <div class="col s12" id="frontend">
+                    <div class="flow-text">
+                        <ul class=" white-text">
+                            <li><p>Material UI</p> </li>
+                            <li><p> React js</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col s12" id="backend">
+                    <div class="flow-text">
+                        <ul class="white-text">
+                            <li>Hibernate ORM</li>
+                            <li>Spring</li>
+                            <li>MySQL</li>
+                        </ul>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/para.jpg" class="responsive-img" alt="para">
+        </div>
+    </div>
+    
+        <!-- Projects -->
+        <section class="mycards scrollspy" id="project">
+            <div class="row" style="padding-left: 50px;padding-right: 50px;">
+                <div class="conatiner ">
+                    <h4 class="header white-text center-align">Projects</h4>
+                </div>
+            <div class="col s12 m12 l3" style="padding: 50px 5px;"> 
+                <div class="card ">
+                    <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/html-css-logo.jpg">
+                    </div>
+                    <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">HTML/CSS<i class="material-icons right">more_vert</i></span>
+                    <p><a href="https://ritesh-jadhav.github.io/marioClub/" target="_blank">visit to view</a></p>
+                    </div>
+                    <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">MarioClub<i class="material-icons right">close</i></span>
+                    <p>Mini project by only HTML and CSS (fully responsvie)</p>
+                    </div>
+                </div>
+                            
+
+
+            </div>
+
+            <div class="col s12 m12 l3" style="padding: 50px 5px;"> 
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/materialize-logo.png">
+                    </div>
+                    <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">UI-Materialize<i class="material-icons right">more_vert</i></span>
+                    <p>open to visit</p>
+                   
+                    </div>
+                    <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Responsive webpages<i class="material-icons right">close</i></span>
+                    <p><a href="https://ritesh-jadhav.github.io/DroomNinja/" target="_blank">Droom Ninja</a></p>
+                    <p><a href="https://ritesh-jadhav.github.io/CoffeeKing/" target="_blank">Cafe-king</a></p>
+                    <p>Designed responsive and rich UI with materialize css</p>
+                    
+                    </div>
+                </div>
+                </div>
+            <div class="col s12 m12 l3" style="padding: 50px 5px;"> 
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/js-logo.png">
+                    </div>
+                    <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Javascript<i class="material-icons right">more_vert</i></span>
+                    <p><a href="https://ritesh-jadhav.github.io/javascript/"  target="_blank">visit to view</a></p>
+                    </div>
+                    <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">DOM manipulation<i class="material-icons right">close</i></span>
+                        
+                    <p>event handling,storage,form validation and many more...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l3" style="padding: 50px 5px;"> 
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="img/java-logo.png">
+                    </div>
+                    <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Java Web App<i class="material-icons right">more_vert</i></span>
+                    <p><a href="https://github.com/ritesh-jadhav/notetaker/tree/master/NoteTaker"  target="_blank">visit to view</a></p>
+                    </div>
+                    <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Note-Taker<i class="material-icons right">close</i></span>
+                    <p>Technology used : Servletes,JSP,Maven</p>
+                    <p>UI : HTML,CSS,Bootstrap</p>
+                    <p>DB : MySQL</p>
+                    <p>ORM : Hibernet 5.0</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+     </section>
+     
+     <!-- footer -->
+     <footer class="page-footer grey darken-3 scrollspy" id="contact">
+         <div class="container">
+             <div class="row">
+                 <div class="col s12 l6">
+                     <h5 class="white-text">Contact</h5>
+                        <p class="grey-text lighten-4">Address : Garkheda parisar,Aurangad,Maharastra - India.</p>
+                        <p class="grey-text lighten-4">Gmial : jadhav.ritesh0416@gmail.com</p>
+                        <p class="grey-text lighten-4">Contact no. : +91-9823436224</p>  
+                       <h6 class="white-text darken-2">Follow on</h6><br>
+                        <nav class="center grey darken-3">
+                        <ul>
+                            <li><a href="#" class="tooltipped btn-floating btn-small black" data-tooltip="Instagram" onclick="toggleModal();">
+                                <i class="fab fa-instagram"></i>
+                            </a></li>
+                            <li><a href="#" class="tooltipped btn-floating btn-small black" data-tooltip="LinkedIn" onclick="toggleModal();">
+                                <i class="fab fa-linkedin"></i>
+                            </a></li>
+                            <li><a href="#" class="tooltipped btn-floating btn-small black" data-tooltip="GitHub" onclick="toggleModal();">
+                                <i class="fab fa-github"></i>
+                            </a></li>
+                            <li><a href="#" class="tooltipped btn-floating btn-small black" data-tooltip="Facebook" onclick="toggleModal();">
+                                <i class="fab fa-facebook"></i>
+                            </a></li>
+                            <li><a href="#" class="tooltipped btn-floating btn-small black" data-tooltip="Twitter" onclick="toggleModal();">
+                                <i class="fab fa-twitter"></i>
+                            </a></li>
+                        </ul>
+                    </nav>
+                 </div>
+                    <div class="col s12 l4 offset-l2">
+                    <h5>Leave a message</h5>
+                    <form action="">
+                        <div class="input-field">
+                            <i class="material-icons prefix grey-text lighten-5">person</i>
+                            <input type="email" id="email" required>
+                            <label for="email">Your good name</label>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix grey-text lighten-5" >email</i>
+                            <textarea name="" id="message" class="materialize-textarea" required></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" id="date" class="datepicker" required>
+                            <label for="date">Choose a date you need mefor</label>
+                        </div>
+                        <div class="input-field center">
+                            <button class="btn blue-grey" onclick="toggleModal();">Submit </button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+         </div>
+         <div class="footer-copywrite grey darken-4">
+             <div class="container center-align">Copyright&copy;2020 Personal profile</div>
+             <div class="conatiner right-align white-text">Designed by : Ritesh Jadhav</div>
+         </div>
+     </footer>
+     <!-- Model -->
+     <section class="infomaodal">
+         <div id="modal3" class="modal">
+             <div class="modal-content">
+                 <h4 class="info-modal-heading">Link Disabled</h4>
+                 <p id="info-modal-content">Sorry..!Link is disabled as of now.</p>
+             </div>
+             <div class="modal-footer">
+                 <a href="#" class="modal-close waves-effect btn-flat">Close</a>
+             </div>
+         </div>
+     </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+         $(document).ready(function(){
+             $('.sidenav').sidenav();
+             $('.parallax').parallax();
+             $('.tabs').tabs();
+             $('.modal').modal();
+             $('.scrollspy').scrollSpy();
+             $('.materialboxed').materialbox();
+             $('.tooltipped').tooltip();
+             $('.slider').slider({full_width:true});
+             $('.datepicker').datepicker({disableWeekends:true});
+             });
+             function toggleModal(){
+                 var instance = M.Modal.getInstance($("#modal3"));
+                 instance.open();
+             }
+            
+    </script> 
+</body>
+</html>
